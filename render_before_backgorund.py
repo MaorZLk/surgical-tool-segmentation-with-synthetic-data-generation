@@ -59,7 +59,6 @@ light.set_energy(random.uniform(100, 1000))
 
 light.set_color([random.uniform(0,1), random.uniform(0,1), random.uniform(0,1)]) # TODO this is my addition of color
 
-
 # Set camera intrinsics parameters
 with open(args.camera_params, "r") as file:
     camera_params = json.load(file)
