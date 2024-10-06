@@ -7,6 +7,13 @@ import argparse
 from PIL import Image
 from tqdm import tqdm
 
+import logging
+
+# Configure logging
+logging.basicConfig(level=logging.INFO,
+                    format='%(asctime)s - %(levelname)s - %(message)s')
+
+
 def main():
     # Get and parse all given arguments
     parser = argparse.ArgumentParser()
@@ -72,6 +79,7 @@ def main():
                     background.save(
                         os.path.join(args.images, "output", file_name))
                 else:
+                    logging.info(args.output)
                     background.save(args.output)
 
 
