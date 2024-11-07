@@ -44,7 +44,7 @@ def main():
                         type=str,
                         help="Output directory. Default: 'output'.")
     args = parser.parse_args()
-
+    # raise Exception(os.path.join(args.images, "output"))
     # Create an output directory if `overwrite` is not selected
     if not args.overwrite:
         if args.output == "output":

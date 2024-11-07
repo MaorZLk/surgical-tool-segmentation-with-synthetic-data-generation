@@ -1,0 +1,8 @@
+path: /home/student/Desktop/Visualization_project/synth_dataset_two
+train: images/train
+val: images/val
+
+names:
+    0: empty
+    1: needle_holder
+    2: tweezers
